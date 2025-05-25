@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume | Adithya Bijoy | Computer Science Student | Aspiring Software Developer</title>
+    <link rel="icon" type="image/x-icon" href="images/cv.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      h1, h2, h3 {
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .certifications a {
+        text-decoration: underline;
+        color: #007BFF;
+      }
+
+      .cert-image-viewer {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        text-align: center;
+      }
+
+      .cert-image-viewer:target {
+        display: block;
+      }
+
+      .cert-image-viewer .content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: auto;
+        max-width: 90%;
+      }
+
+      .cert-image-viewer img {
+        max-width: 100%;
+        max-height: 80vh;
+        border-radius: 8px;
+        box-shadow: 0 0 20px #000;
+      }
+
+      .cert-image-viewer .close {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        color: #fff;
+        font-size: 32px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body class="resume">
+    <a class="btn download-link" href="Adithya Bijoy CV.pdf">Download PDF</a>
+
+    <!-- INTRO -->
+    <header>
+      <div class="content-wrapper">
+        <h1>Adithya Bijoy</h1>
+        <h2>Computer Science Student | Aspiring Software Developer</h2>
+      </div>
+    </header>
+
+    <main class="content-wrapper">
+      <!-- PROFILE -->
+      <section class="resume-section">
+        <h2>Profile</h2>
+        <p>
+          I’m an aspiring Machine Learning developer with hands-on experience in Python and ML libraries like scikit-learn
+          and TensorFlow. I have a strong foundation in data structures and algorithms and enjoy applying my skills
+          to real-world projects. I’m passionate about using AI to solve problems and continuously growing my knowledge.
+        </p>
+        <a href="index.html">Back to homepage</a>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="resume-section">
+        <h2>Projects</h2>
+        <p>
+          View selected projects below. More information can be found at my
+          <a href="https://www.linkedin.com/in/adithyabijoy11">Linkedin profile</a>
+        </p>
+
+        <div class="project-wrapper">
+          <section class="project-item">
+            <img src="images/plantdisease.png"
+              srcset="images/plantdisease.png" />
+            <h3>Plant Disease Detection System</h3>
+            <p>
+              I developed an AI-powered system for detecting plant diseases using
+              deep learning and computer vision. By training a CNN on a dataset of
+              plant leaf images, the model achieved high accuracy in identifying
+              various diseases. I integrated real-time image processing with
+              OpenCV and built a user-friendly interface that allows farmers and
+              agricultural experts to upload images and instantly receive diagnostic results.
+            </p>
+          </section>
+
+          <section class="project-item">
+            <img src="images/phishinglink.png"
+              srcset="images/phishinglink.png" />
+            <h3>Phishing Link Detection System</h3>
+            <p>
+              I developed an AI-powered plant disease detection system using
+              deep learning and computer vision. The project involved training a CNN
+              on a dataset of leaf images to accurately identify diseases, integrating 
+              real-time image processing with OpenCV, and designing an intuitive
+              interface for farmers and agricultural experts to upload images and
+              receive instant diagnostic feedback.
+            </p>
+          </section>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="resume-section">
+        <h2>Education</h2>
+
+        <section class="education-item">
+          <h3>VIT Bhopal University, Bhopal</h3>
+          <p>BTech in Computer Science and Engineering, 2027</p>
+          <p>CGPA - 8.32</p>
+        </section>
+
+        <section class="education-item">
+          <h3>Devagiri CMI Public School, Kozhikode</h3>
+          <p>XII grade, 2022</p>
+          <p>Percentage: 76.00</p>
+        </section>
+
+        <section class="education-item">
+          <h3>The White School International, Kozhikode</h3>
+          <p>X grade, 2020</p>
+          <p>Percentage: 92.20</p>
+        </section>
+      </section>
+
+      <!-- TECHNICAL SKILLS -->
+      <section class="resume-section">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>Languages: Java, C++, Python, HTML</li>
+          <li>Libraries: PANDAS, scikit-learn, TensorFlow</li>
+          <li>Databases: MySQL</li>
+          <li>Tools: Git, GitHub, VS Code</li>
+        </ul>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section class="resume-section certifications">
+        <h2>Certifications</h2>
+        <ul>
+          <li><a href="#cert-ai">Fundamentals of AI and ML</a></li>
+          <li><a href="#cert-python">Python Essentials</a></li>
+          <li><a href="#cert-java">Programming in Java</a></li>
+        </ul>
+      </section>
+
+      <!-- CERTIFICATE IMAGE MODALS -->
+      <div id="cert-ai" class="cert-image-viewer">
+        <div class="content">
+          <a href="#" class="close">&times;</a>
+          <img src="images/certificate.png" alt="AI and ML Certificate">
+        </div>
+      </div>
+
+      <div id="cert-python" class="cert-image-viewer">
+        <div class="content">
+          <a href="#" class="close">&times;</a>
+          <img src="images/certificate (1).png" alt="Python Essentials Certificate">
+        </div>
+      </div>
+
+      <div id="cert-java" class="cert-image-viewer">
+        <div class="content">
+          <a href="#" class="close">&times;</a>
+          <img src="images/java certificate_23bce11624.png" alt="Java Programming Certificate">
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        © 2025 by Adithya Bijoy |
+        <a href="mailto:adithya.23bce11624@vitbhopal.ac.in">adithya.23bce11624@vitbhopal.ac.in</a>
+      </p>
+
+      <ul class="socials">
+        <li>
+          <a href="https://www.linkedin.com/in/adithyabijoy11" target="_blank">
+            <img src="images/linkedin.png" alt="LinkedIn" />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Adithyax11" target="_blank">
+            <img src="images/images-removebg-preview.png" alt="GitHub" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

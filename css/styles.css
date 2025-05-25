@@ -1,0 +1,233 @@
+/* Global Styles */
+
+/* 
+     dark-green - #3c8453
+     sarly-beige - #bcaa96
+     dark grey - #222
+     light grey - #d3d4d6 
+     off-white - #f6f6f6
+ */
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+html,body{
+    height: 100%;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+    margin:0;
+}
+
+.content-wrapper{
+    margin:0 auto;
+    padding: 30px;
+    max-width:900px;
+}
+
+body{
+    background-color: #f6f6f6;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+a{
+    color:#3c8453;
+}
+a:hover{
+    color:#bcaa96;
+}
+
+.btn{
+    background-color: #3c8453;
+    color:#f6f6f6;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 5px;
+    display: inline-block;
+    line-height: 1;
+    border-radius: 4px;
+    letter-spacing: .1em;
+
+}
+h1,h2,h3{
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+    margin:0;
+}
+h1{
+    font-size: 7rem;
+    line-height: 0.85;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 2rem;
+}
+
+/* Index */
+.home{
+    background : url(../images/bg-home-office-studio.jpg) no-repeat;
+    background-size: cover ;
+    display: flex;
+    flex-direction: column;
+}
+.home .content-wrapper{
+    margin: 0 auto;
+    padding: 30px;
+    flex: 1 0 auto;
+}
+.home .content-bg{
+    padding:30px;
+    background: rgba(255, 255, 255, 0.9 );
+}
+
+/* Resume */
+.resume header::before{
+    background: url(../images/bg-home-office-studio.jpg) center/cover;
+    content:"";
+    display: block;
+    height: 375px;
+}
+.resume-section{
+    margin-bottom:50px;
+}
+.resume-section h2{
+    border-bottom: 2px dashed #d3d4d6 ;
+}
+.download-link{
+    font-size: 1.5rem;
+    position:fixed;
+    top:5px;
+    left:5px;   
+}
+
+/* Profile */
+/* Projects */
+.project-item {
+    margin: 30px 0;
+}
+.project-item img {
+    width: 300px;
+}
+/* Work Experience */
+
+.work-item{
+    margin-block: 30px;
+}
+.work-details p{
+    margin: 0;
+}
+.work-summary p:first-child{
+    margin-top: 0;
+}
+
+/* Education */
+.education-item{
+    margin-block: 30px;
+}
+.education-item p{
+    margin: 0;
+}
+/* Footer */
+footer{
+    background-color: #222;
+    color: #d3d4d6;
+}
+
+footer a{
+    color:#bcaa96;;
+}
+footer a:hover{
+    color:#3c8453
+}
+
+.socials{
+    list-style-type:none;
+    padding: 0;
+}
+
+.socials img{
+    width: 32px;
+}
+
+.socials li{
+    display: inline-block;
+    margin-left:10px;
+}
+.socials img:hover{
+    opacity: 50%;
+}
+
+@media (max-width:500) {
+    .resume header::befor{
+        height: 200px;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 2.6rem;
+    }
+}
+
+@media (min-width:860px) {
+    .work-item{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+    }
+    .work-summary p:first-child{
+        margin-top: 0;
+    }
+}
+
+
+@media (min-width:860px) {
+    .project-item{
+        display: flow-root;
+    }
+    .project-item img{
+    float:left;
+    margin-right: 20px;
+}
+}
+
+@media (min-width:650px) and (max-width:859px){
+    .project-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    .project-item img{
+        width: 100%;
+    }
+}
+@media (max-width:500px) {
+    .project-item img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:1250px){
+    .download-link{
+        position: absolute;
+    }
+}
+
+@media (min-width:860px){
+    footer{
+        display :flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:859px){
+    footer{
+        text-align : center;
+        padding: 10px;
+    }
+}
