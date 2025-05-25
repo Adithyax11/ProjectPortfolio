@@ -69,7 +69,7 @@ h3{
 
 /* Index */
 .home{
-    background : url(../images/bg-home-office-studio.jpg) no-repeat;
+    background : url(../images/mac_setup.jpg) no-repeat;
     background-size: cover ;
     display: flex;
     flex-direction: column;
@@ -86,7 +86,7 @@ h3{
 
 /* Resume */
 .resume header::before{
-    background: url(../images/bg-home-office-studio.jpg) center/cover;
+    background: url(../images/mac_setup.jpg) center/cover;
     content:"";
     display: block;
     height: 375px;
